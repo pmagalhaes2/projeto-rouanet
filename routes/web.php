@@ -28,10 +28,20 @@ Route::get('/rouanets/view', function () {
     ]);
 });
 
-Route::get('/rouanets', function() {
+Route::get('/rouanets', function () {
     return Rouanet::all();
 });
 
-Route::get('/rouanets/{id}', function($id) {
-   return Rouanet::find($id);
+Route::get('/rouanet/{id}', function ($id) {
+    return Rouanet::find($id);
 });
+
+
+Route::get('/rouanet/view/{id}', function ($id) {
+    $data = Rouanet::find($id);
+
+        return view('rouanet', [
+            'id' => $id,
+            'data' => $data
+        ]);
+    });
