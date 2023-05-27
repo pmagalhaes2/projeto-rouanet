@@ -18,3 +18,20 @@ Route::get('/', function () {
 
     return view('welcome');
 });
+
+
+Route::get('/rouanets/view', function () {
+    $data = Rouanet::all();
+
+    return view('rouanets', [
+        'data' => $data,
+    ]);
+});
+
+Route::get('/rouanets', function() {
+    return Rouanet::all();
+});
+
+Route::get('/rouanets/{id}', function($id) {
+   return Rouanet::find($id);
+});
