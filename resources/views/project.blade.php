@@ -1,13 +1,13 @@
 @extends('layouts.main')
 
-@section('title', 'Rouanet')
+@section('title', 'Projeto')
 
 <link rel="stylesheet" href="/css/styles.css">
 
 @section('content')
 
 
-<h1>Exibindo rouanet id: {{ $id }}</h1>
+<h1>Exibindo projeto id: {{ $id }}</h1>
 
 <div class="card-container">
     <div class="card">

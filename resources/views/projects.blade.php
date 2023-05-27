@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Rouanets')
+@section('title', 'Projetos')
 
 <link rel="stylesheet" href="/css/styles.css">
 
