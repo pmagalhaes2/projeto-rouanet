@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Rouanet;
+use App\Http\Controllers\RouanetController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,28 +20,12 @@ Route::get('/', function () {
 });
 
 
-Route::get('/rouanets/view', function () {
-    $data = Rouanet::all();
+Route::get('/projects/view', [RouanetController::class, 'getProjectsView']);
 
-    return view('rouanets', [
-        'data' => $data,
-    ]);
-});
+Route::get('/projects', [RouanetController::class, 'index']);
 
-Route::get('/rouanets', function () {
-    return Rouanet::all();
-});
+Route::get('/project/{id}', [RouanetController::class, 'getProjectById']);
 
-Route::get('/rouanet/{id}', function ($id) {
-    return Rouanet::find($id);
-});
+Route::get('/project/view/{id}', [RouanetController::class, 'getProjectByIdView']);
 
-
-Route::get('/rouanet/view/{id}', function ($id) {
-    $data = Rouanet::find($id);
-
-        return view('rouanet', [
-            'id' => $id,
-            'data' => $data
-        ]);
-    });
+Route::get('/project/create', [RouanetController::class, 'create']);
