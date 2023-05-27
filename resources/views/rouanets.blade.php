@@ -1,60 +1,12 @@
-<link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+@extends('layouts.main')
 
+@section('title', 'Rouanets')
 
-<style>
-    * {
-        font-family: 'Nunito';
-    }
+<link rel="stylesheet" href="/css/styles.css">
 
-    .flag {
-        text-transform: uppercase;
-        background-color: #FFF2DB;
-        color: #D2A562;
-        font-weight: bold;
-        width: fit-content;
-        position: absolute;
-        top: 0;
-        right: 0;
-        border-radius: 0.2rem;
-        padding: 0 0.5rem;
-    }
+@section('content')
 
-    .card-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        justify-items: center;
-
-    }
-
-    .card {
-        position: relative;
-        width: 400px;
-        border: 1px solid #4A4A4A;
-        border-radius: 0.5rem;
-        padding: 1rem 2rem;
-    }
-
-    h2 {
-        margin-top: 2.5rem;
-    }
-
-    p {
-        color: #4A4A4A;
-    }
-
-    .wrap-text {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    span {
-        font-weight: bold;
-    }
-</style>
-
-<div class="card-container">
+<div class="cards-container">
     @foreach($data as $d)
     <div class="card">
         <p class='flag'>{{$d->area}}</p>
@@ -72,3 +24,5 @@
     </div>
     @endforeach
 </div>
+
+@endsection
