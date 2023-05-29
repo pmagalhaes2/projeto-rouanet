@@ -30,7 +30,7 @@ class RouanetController extends Controller
      */
     public function show($id)
     {
-        return Rouanet::find($id);
+        return Rouanet::findOrFail($id);
     }
 
     // Retorno de view de acordo com o id do projeto
@@ -93,9 +93,22 @@ class RouanetController extends Controller
         $project->link_incentivadores = $request->link_incentivadores;
 
         echo $project;
-        
+
         $project->save();
 
-        return redirect('/');
+        return redirect('/')->with('msg', 'Projeto criado com sucesso!');
+    }
+
+        /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        Rouanet::findOrFail($id)->delete();
+
+        return redirect('/')->with('msg', 'Projeto excluído com sucesso!');
     }
 }

@@ -21,6 +21,11 @@
             <p>Captado</p>
             <span>R$ {{ $d->valor_captado }}</span>
         </div>
+        <form action="/projects/{{ $d-> id_projeto}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button type="submit">Deletar</button>
+        </form>
     </div>
     @endforeach
 </div>
