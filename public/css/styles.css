@@ -59,6 +59,19 @@ p {
     gap: 2rem;
 }
 
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    margin: 0;
+}
+
 span {
     font-weight: bold;
 }

@@ -33,3 +33,7 @@ Route::get('/projects/create', [RouanetController::class, 'create']);
 Route::post('/projects', [RouanetController::class, 'store']);
 
 Route::delete('/projects/{id}', [RouanetController::class, 'destroy']);
+
+Route::get('/projects/edit/{id}', [RouanetController::class, 'edit']);
+
+Route::put('/projects/update/{id}', [RouanetController::class, 'update']);

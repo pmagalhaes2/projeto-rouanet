@@ -10,4 +10,6 @@ class Rouanet extends Model
     use HasFactory;
 
     protected $primaryKey = 'id_projeto';
+
+    protected $guarded = [];
 }

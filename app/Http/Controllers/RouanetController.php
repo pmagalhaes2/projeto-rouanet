@@ -99,7 +99,7 @@ class RouanetController extends Controller
         return redirect('/')->with('msg', 'Projeto criado com sucesso!');
     }
 
-        /**
+    /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
@@ -110,5 +110,31 @@ class RouanetController extends Controller
         Rouanet::findOrFail($id)->delete();
 
         return redirect('/')->with('msg', 'Projeto excluído com sucesso!');
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     */
+    public function edit($id)
+    {
+        $project = Rouanet::findOrFail($id);
+
+        return view('projects.edit', ['project' => $project]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request)
+    {
+        Rouanet::findOrFail($request->id)->update($request->all());
+
+        return redirect('/')->with('msg', 'Projeto alterado com sucesso!');
     }
 }
