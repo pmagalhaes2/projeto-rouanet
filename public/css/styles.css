@@ -1,11 +1,11 @@
 * {
-    font-family: 'Nunito';
+    font-family: "Nunito";
 }
 
 .flag {
     text-transform: uppercase;
-    background-color: #FFF2DB;
-    color: #D2A562;
+    background-color: #fff2db;
+    color: #d2a562;
     font-weight: bold;
     width: fit-content;
     position: absolute;
@@ -30,7 +30,7 @@
 .card {
     position: relative;
     width: 400px;
-    border: 1px solid #4A4A4A;
+    border: 1px solid #4a4a4a;
     border-radius: 0.5rem;
     padding: 1rem 2rem;
 }
@@ -40,7 +40,7 @@ h2 {
 }
 
 p {
-    color: #4A4A4A;
+    color: #4a4a4a;
 }
 
 .wrap-text {
@@ -52,3 +52,24 @@ p {
 span {
     font-weight: bold;
 }
+
+#project-create-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 500px;
+}
+
+input,
+select {
+    height: 2rem;
+    padding: 0.5rem;
+}
+

@@ -21,6 +21,24 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/projects/view" class="nav-link">Listar Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/projects/create" class="nav-link">Criar Rouanet</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
     @yield('content')
 </body>
 
