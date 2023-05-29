@@ -28,4 +28,6 @@ Route::get('/project/{id}', [RouanetController::class, 'getProjectById']);
 
 Route::get('/project/view/{id}', [RouanetController::class, 'getProjectByIdView']);
 
-Route::get('/project/create', [RouanetController::class, 'create']);
+Route::get('/projects/create', [RouanetController::class, 'create']);
+
+Route::post('/projects', [RouanetController::class, 'store']);
