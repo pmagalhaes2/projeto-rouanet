@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Rouanet;
 
+
 class RouanetController extends Controller
 {
     public function index()
@@ -103,13 +104,10 @@ class RouanetController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
         Rouanet::findOrFail($id)->delete();
-
-        return redirect('/')->with('msg', 'Projeto excluído com sucesso!');
     }
 
     /**
@@ -117,7 +115,7 @@ class RouanetController extends Controller
      *
      * @param  int  $id
      */
-    public function edit($id)
+    public function editView($id)
     {
         $project = Rouanet::findOrFail($id);
 
@@ -129,12 +127,9 @@ class RouanetController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
      */
     public function update(Request $request)
     {
         Rouanet::findOrFail($request->id)->update($request->all());
-
-        return redirect('/')->with('msg', 'Projeto alterado com sucesso!');
     }
 }
