@@ -24,7 +24,7 @@ Route::get('/projects/view', [RouanetController::class, 'getProjectsView']);
 
 Route::get('/projects', [RouanetController::class, 'index']);
 
-Route::get('/project/{id}', [RouanetController::class, 'show']);
+Route::get('/projects/{id}', [RouanetController::class, 'show']);
 
 Route::get('/project/view/{id}', [RouanetController::class, 'getProjectByIdView']);
 
