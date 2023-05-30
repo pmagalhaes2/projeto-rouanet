@@ -12,7 +12,7 @@ return [
                 /*
                  * Route for accessing api documentation interface
                 */
-                'api' => 'api/docuphp artisan vendor:publish --provider "L5Swagger\L5SwaggerServiceProvider"mentation',
+                'api' => 'api/documentation',
             ],
             'paths' => [
                 /*

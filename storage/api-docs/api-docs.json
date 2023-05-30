@@ -1,0 +1,1103 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Projeto Rouanet API",
+        "description": "Lista com URI's da API de Projetos Rouanet",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "http://127.0.0.1:8000"
+        }
+    ],
+    "paths": {
+        "/projects": {
+            "get": {
+                "tags": [
+                    "Projects"
+                ],
+                "summary": "Get list of projects",
+                "operationId": "3c25edc694fe19bfb60238a0a8829dba",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "projects": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id_projeto": {
+                                                        "type": "number",
+                                                        "example": 123
+                                                    },
+                                                    "pronac": {
+                                                        "type": "string",
+                                                        "example": "12345"
+                                                    },
+                                                    "ano_projeto": {
+                                                        "type": "string",
+                                                        "example": "2023"
+                                                    },
+                                                    "nome": {
+                                                        "type": "string",
+                                                        "example": "Festival de Blumenau"
+                                                    },
+                                                    "segmento": {
+                                                        "type": "string",
+                                                        "example": "Exposição de Artes Visuais"
+                                                    },
+                                                    "area": {
+                                                        "type": "string",
+                                                        "example": "Artes Visuais"
+                                                    },
+                                                    "uf": {
+                                                        "type": "string",
+                                                        "example": "SC"
+                                                    },
+                                                    "municipio": {
+                                                        "type": "string",
+                                                        "example": "Blumenau"
+                                                    },
+                                                    "data_inicio": {
+                                                        "type": "string",
+                                                        "example": "2023-02-23 00:00:00"
+                                                    },
+                                                    "data_termino": {
+                                                        "type": "string",
+                                                        "example": "2023-02-28 00:00:00"
+                                                    },
+                                                    "situacao": {
+                                                        "type": "string",
+                                                        "example": "Autorizada a captação"
+                                                    },
+                                                    "mecanismo": {
+                                                        "type": "string",
+                                                        "example": "Mecenato"
+                                                    },
+                                                    "enquadramento": {
+                                                        "type": "string",
+                                                        "example": "Artigo XXX"
+                                                    },
+                                                    "valor_captado": {
+                                                        "type": "string",
+                                                        "example": "65000"
+                                                    },
+                                                    "valor_aprovado": {
+                                                        "type": "string",
+                                                        "example": "20000"
+                                                    },
+                                                    "acessibilidade": {
+                                                        "type": "string",
+                                                        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    },
+                                                    "objetivos": {
+                                                        "type": "string",
+                                                        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    },
+                                                    "justificativa": {
+                                                        "type": "string",
+                                                        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    },
+                                                    "etapa": {
+                                                        "type": "string",
+                                                        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    },
+                                                    "ficha_tecnica": {
+                                                        "type": "string",
+                                                        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    },
+                                                    "impacto_ambiental": {
+                                                        "type": "string",
+                                                        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    },
+                                                    "especificacao_tecnica": {
+                                                        "type": "string",
+                                                        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    },
+                                                    "providencia": {
+                                                        "type": "string",
+                                                        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    },
+                                                    "democratizacao": {
+                                                        "type": "string",
+                                                        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    },
+                                                    "sinopse": {
+                                                        "type": "string",
+                                                        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    },
+                                                    "resumo": {
+                                                        "type": "string",
+                                                        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    },
+                                                    "created_at": {
+                                                        "type": "string",
+                                                        "example": "2023-02-23T12:33:45.000000Z"
+                                                    },
+                                                    "uppated_at": {
+                                                        "type": "string",
+                                                        "example": "2023-02-25T12:33:45.000000Z"
+                                                    },
+                                                    "valor_projeto": {
+                                                        "type": "string",
+                                                        "example": "78000.36"
+                                                    },
+                                                    "outras_fontes": {
+                                                        "type": "string",
+                                                        "example": "0"
+                                                    },
+                                                    "valor_proposta": {
+                                                        "type": "string",
+                                                        "example": "454587"
+                                                    },
+                                                    "valor_solicitado": {
+                                                        "type": "string",
+                                                        "example": "454587"
+                                                    },
+                                                    "objetivo": {
+                                                        "type": "string",
+                                                        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    },
+                                                    "estrategia_execucao": {
+                                                        "type": "string",
+                                                        "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                                    },
+                                                    "link_incentivadores": {
+                                                        "type": "string",
+                                                        "example": "http://link_example.com"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Projects"
+                ],
+                "summary": "Create a new project",
+                "operationId": "44fc72c03789caff929e2cd7b235f255",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "": {
+                                        "properties": {
+                                            "pronac": {
+                                                "type": "string"
+                                            },
+                                            "ano_projeto": {
+                                                "type": "string"
+                                            },
+                                            "nome": {
+                                                "type": "string"
+                                            },
+                                            "segmento": {
+                                                "type": "string"
+                                            },
+                                            "area": {
+                                                "type": "string"
+                                            },
+                                            "uf": {
+                                                "type": "string"
+                                            },
+                                            "municipio": {
+                                                "type": "string"
+                                            },
+                                            "data_inicio": {
+                                                "type": "string"
+                                            },
+                                            "data_termino": {
+                                                "type": "string"
+                                            },
+                                            "situacao": {
+                                                "type": "string"
+                                            },
+                                            "mecanismo": {
+                                                "type": "string"
+                                            },
+                                            "enquadramento": {
+                                                "type": "string"
+                                            },
+                                            "valor_captado": {
+                                                "type": "string"
+                                            },
+                                            "valor_aprovado": {
+                                                "type": "string"
+                                            },
+                                            "acessibilidade": {
+                                                "type": "string"
+                                            },
+                                            "objetivos": {
+                                                "type": "string"
+                                            },
+                                            "justificativa": {
+                                                "type": "string"
+                                            },
+                                            "etapa": {
+                                                "type": "string"
+                                            },
+                                            "ficha_tecnica": {
+                                                "type": "string"
+                                            },
+                                            "impacto_ambiental": {
+                                                "type": "string"
+                                            },
+                                            "especificacao_tecnica": {
+                                                "type": "string"
+                                            },
+                                            "providencia": {
+                                                "type": "string"
+                                            },
+                                            "democratizacao": {
+                                                "type": "string"
+                                            },
+                                            "sinopse": {
+                                                "type": "string"
+                                            },
+                                            "resumo": {
+                                                "type": "string"
+                                            },
+                                            "created_at": {
+                                                "type": "string"
+                                            },
+                                            "updated_at": {
+                                                "type": "string"
+                                            },
+                                            "valor_projeto": {
+                                                "type": "string"
+                                            },
+                                            "outras_fontes": {
+                                                "type": "string"
+                                            },
+                                            "valor_proposta": {
+                                                "type": "string"
+                                            },
+                                            "valor_solicitado": {
+                                                "type": "string"
+                                            },
+                                            "objetivo": {
+                                                "type": "string"
+                                            },
+                                            "estrategia_execucao": {
+                                                "type": "string"
+                                            },
+                                            "link_incentivadores": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                },
+                                "type": "object",
+                                "example": {
+                                    "pronac": "12345",
+                                    "ano_projeto": "2023",
+                                    "nome": "Nome do Projeto",
+                                    "segmento": "Exposição de Artes Visuais",
+                                    "area": "Artes Visuais",
+                                    "uf": "SC",
+                                    "municipio": "Blumenau",
+                                    "data_inicio": "2023-02-23 00:00:00",
+                                    "data_termino": "2023-02-28 00:00:00",
+                                    "situacao": "Autorizada a captação",
+                                    "mecanismo": "Mecenato",
+                                    "enquadramento": "Artigo XXX",
+                                    "valor_captado": "65000",
+                                    "valor_aprovado": "20000",
+                                    "acessibilidade": "Lorem ipsum dolor sit amet.",
+                                    "objetivos": "Lorem ipsum dolor sit amet.",
+                                    "justificativa": "Lorem ipsum dolor sit amet.",
+                                    "etapa": "Lorem ipsum dolor sit amet.",
+                                    "ficha_tecnica": "Lorem ipsum dolor sit amet.",
+                                    "impacto_ambiental": "Lorem ipsum dolor sit amet.",
+                                    "especificacao_tecnica": "Lorem ipsum dolor sit amet.",
+                                    "providencia": "Lorem ipsum dolor sit amet.",
+                                    "democratizacao": "Lorem ipsum dolor sit amet.",
+                                    "sinopse": "Lorem ipsum dolor sit amet.",
+                                    "resumo": "Lorem ipsum dolor sit amet.",
+                                    "created_at": "2023-02-23T12:33:45.000000Z",
+                                    "updated_at": "2023-02-25T12:33:45.000000Z",
+                                    "valor_projeto": "78000.36",
+                                    "outras_fontes": "0",
+                                    "valor_proposta": "454587",
+                                    "valor_solicitado": "454587",
+                                    "objetivo": "Lorem ipsum dolor sit amet.",
+                                    "estrategia_execucao": "Lorem ipsum dolor sit amet.",
+                                    "link_incentivadores": "http://link_example.com"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "CREATED",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id_projeto": {
+                                            "type": "number",
+                                            "example": 1
+                                        },
+                                        "pronac": {
+                                            "type": "string",
+                                            "example": "12345"
+                                        },
+                                        "ano_projeto": {
+                                            "type": "string",
+                                            "example": "2023"
+                                        },
+                                        "nome": {
+                                            "type": "string",
+                                            "example": "Nome do Projeto"
+                                        },
+                                        "segmento": {
+                                            "type": "string",
+                                            "example": "Exposição de Artes Visuais"
+                                        },
+                                        "area": {
+                                            "type": "string",
+                                            "example": "Artes Visuais"
+                                        },
+                                        "uf": {
+                                            "type": "string",
+                                            "example": "SC"
+                                        },
+                                        "municipio": {
+                                            "type": "string",
+                                            "example": "Blumenau"
+                                        },
+                                        "data_inicio": {
+                                            "type": "string",
+                                            "example": "2023-02-23 00:00:00"
+                                        },
+                                        "data_termino": {
+                                            "type": "string",
+                                            "example": "2023-02-28 00:00:00"
+                                        },
+                                        "situacao": {
+                                            "type": "string",
+                                            "example": "Autorizada a captação"
+                                        },
+                                        "mecanismo": {
+                                            "type": "string",
+                                            "example": "Mecenato"
+                                        },
+                                        "enquadramento": {
+                                            "type": "string",
+                                            "example": "Artigo XXX"
+                                        },
+                                        "valor_captado": {
+                                            "type": "string",
+                                            "example": "65000"
+                                        },
+                                        "valor_aprovado": {
+                                            "type": "string",
+                                            "example": "20000"
+                                        },
+                                        "acessibilidade": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "objetivos": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "justificativa": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "etapa": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "ficha_tecnica": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "impacto_ambiental": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "especificacao_tecnica": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "providencia": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "democratizacao": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "sinopse": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "resumo": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "created_at": {
+                                            "type": "string",
+                                            "example": "2023-02-23T12:33:45.000000Z"
+                                        },
+                                        "updated_at": {
+                                            "type": "string",
+                                            "example": "2023-02-25T12:33:45.000000Z"
+                                        },
+                                        "valor_projeto": {
+                                            "type": "string",
+                                            "example": "78000.36"
+                                        },
+                                        "outras_fontes": {
+                                            "type": "string",
+                                            "example": "0"
+                                        },
+                                        "valor_proposta": {
+                                            "type": "string",
+                                            "example": "454587"
+                                        },
+                                        "valor_solicitado": {
+                                            "type": "string",
+                                            "example": "454587"
+                                        },
+                                        "objetivo": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "estrategia_execucao": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "link_incentivadores": {
+                                            "type": "string",
+                                            "example": "http://link_example.com"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "UNPROCESSABLE CONTENT",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "The pronac field is required."
+                                        },
+                                        "errors": {
+                                            "type": "string",
+                                            "example": "Object of errors"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/projects/{id}": {
+            "get": {
+                "tags": [
+                    "Projects"
+                ],
+                "summary": "Get project information by ID",
+                "description": "Returns project data",
+                "operationId": "getProjectById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Project id",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id_projeto": {
+                                            "type": "number",
+                                            "example": 123
+                                        },
+                                        "pronac": {
+                                            "type": "string",
+                                            "example": "12345"
+                                        },
+                                        "ano_projeto": {
+                                            "type": "string",
+                                            "example": "2023"
+                                        },
+                                        "nome": {
+                                            "type": "string",
+                                            "example": "Festival de Blumenau"
+                                        },
+                                        "segmento": {
+                                            "type": "string",
+                                            "example": "Exposição de Artes Visuais"
+                                        },
+                                        "area": {
+                                            "type": "string",
+                                            "example": "Artes Visuais"
+                                        },
+                                        "uf": {
+                                            "type": "string",
+                                            "example": "SC"
+                                        },
+                                        "municipio": {
+                                            "type": "string",
+                                            "example": "Blumenau"
+                                        },
+                                        "data_inicio": {
+                                            "type": "string",
+                                            "example": "2023-02-23 00:00:00"
+                                        },
+                                        "data_termino": {
+                                            "type": "string",
+                                            "example": "2023-02-28 00:00:00"
+                                        },
+                                        "situacao": {
+                                            "type": "string",
+                                            "example": "Autorizada a captação"
+                                        },
+                                        "mecanismo": {
+                                            "type": "string",
+                                            "example": "Mecenato"
+                                        },
+                                        "enquadramento": {
+                                            "type": "string",
+                                            "example": "Artigo XXX"
+                                        },
+                                        "valor_captado": {
+                                            "type": "string",
+                                            "example": "65000"
+                                        },
+                                        "valor_aprovado": {
+                                            "type": "string",
+                                            "example": "20000"
+                                        },
+                                        "acessibilidade": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        },
+                                        "objetivos": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        },
+                                        "justificativa": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        },
+                                        "etapa": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        },
+                                        "ficha_tecnica": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        },
+                                        "impacto_ambiental": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        },
+                                        "especificacao_tecnica": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        },
+                                        "providencia": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        },
+                                        "democratizacao": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        },
+                                        "sinopse": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        },
+                                        "resumo": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        },
+                                        "created_at": {
+                                            "type": "string",
+                                            "example": "2023-02-23T12:33:45.000000Z"
+                                        },
+                                        "uppated_at": {
+                                            "type": "string",
+                                            "example": "2023-02-25T12:33:45.000000Z"
+                                        },
+                                        "valor_projeto": {
+                                            "type": "string",
+                                            "example": "78000.36"
+                                        },
+                                        "outras_fontes": {
+                                            "type": "string",
+                                            "example": "0"
+                                        },
+                                        "valor_proposta": {
+                                            "type": "string",
+                                            "example": "454587"
+                                        },
+                                        "valor_solicitado": {
+                                            "type": "string",
+                                            "example": "454587"
+                                        },
+                                        "objetivo": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        },
+                                        "estrategia_execucao": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                        },
+                                        "link_incentivadores": {
+                                            "type": "string",
+                                            "example": "http://link_example.com"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    },
+                    "404": {
+                        "description": "Project not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "No query results for model [App\\\\Models\\\\Rouanet] #id"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Projects"
+                ],
+                "summary": "Delete a project by ID",
+                "operationId": "bb1c8356815b70de07f6edab3fee4f8f",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "number"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "NO CONTENT"
+                    },
+                    "400": {
+                        "description": "Invalid ID supplied"
+                    },
+                    "404": {
+                        "description": "NOT FOUND",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "Project not found"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/projects/update/{id}": {
+            "put": {
+                "tags": [
+                    "Projects"
+                ],
+                "summary": "Update project information by ID",
+                "operationId": "61e3f2edf4ae1f28e5acbd980c71db88",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "number"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "": {
+                                        "properties": {
+                                            "pronac": {
+                                                "type": "string"
+                                            },
+                                            "ano_projeto": {
+                                                "type": "string"
+                                            },
+                                            "nome": {
+                                                "type": "string"
+                                            },
+                                            "segmento": {
+                                                "type": "string"
+                                            },
+                                            "area": {
+                                                "type": "string"
+                                            },
+                                            "uf": {
+                                                "type": "string"
+                                            },
+                                            "municipio": {
+                                                "type": "string"
+                                            },
+                                            "data_inicio": {
+                                                "type": "string"
+                                            },
+                                            "data_termino": {
+                                                "type": "string"
+                                            },
+                                            "situacao": {
+                                                "type": "string"
+                                            },
+                                            "mecanismo": {
+                                                "type": "string"
+                                            },
+                                            "enquadramento": {
+                                                "type": "string"
+                                            },
+                                            "valor_captado": {
+                                                "type": "string"
+                                            },
+                                            "valor_aprovado": {
+                                                "type": "string"
+                                            },
+                                            "acessibilidade": {
+                                                "type": "string"
+                                            },
+                                            "objetivos": {
+                                                "type": "string"
+                                            },
+                                            "justificativa": {
+                                                "type": "string"
+                                            },
+                                            "etapa": {
+                                                "type": "string"
+                                            },
+                                            "ficha_tecnica": {
+                                                "type": "string"
+                                            },
+                                            "impacto_ambiental": {
+                                                "type": "string"
+                                            },
+                                            "especificacao_tecnica": {
+                                                "type": "string"
+                                            },
+                                            "providencia": {
+                                                "type": "string"
+                                            },
+                                            "democratizacao": {
+                                                "type": "string"
+                                            },
+                                            "sinopse": {
+                                                "type": "string"
+                                            },
+                                            "resumo": {
+                                                "type": "string"
+                                            },
+                                            "created_at": {
+                                                "type": "string"
+                                            },
+                                            "updated_at": {
+                                                "type": "string"
+                                            },
+                                            "valor_projeto": {
+                                                "type": "string"
+                                            },
+                                            "outras_fontes": {
+                                                "type": "string"
+                                            },
+                                            "valor_proposta": {
+                                                "type": "string"
+                                            },
+                                            "valor_solicitado": {
+                                                "type": "string"
+                                            },
+                                            "objetivo": {
+                                                "type": "string"
+                                            },
+                                            "estrategia_execucao": {
+                                                "type": "string"
+                                            },
+                                            "link_incentivadores": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                },
+                                "type": "object",
+                                "example": {
+                                    "pronac": "12345",
+                                    "ano_projeto": "2023",
+                                    "nome": "Nome do Projeto Editado",
+                                    "segmento": "Exposição de Artes Visuais",
+                                    "area": "Artes Visuais",
+                                    "uf": "SC",
+                                    "municipio": "Blumenau",
+                                    "data_inicio": "2023-02-23 00:00:00",
+                                    "data_termino": "2023-02-28 00:00:00",
+                                    "situacao": "Autorizada a captação",
+                                    "mecanismo": "Mecenato",
+                                    "enquadramento": "Artigo XXX",
+                                    "valor_captado": "65000",
+                                    "valor_aprovado": "20000",
+                                    "acessibilidade": "Lorem ipsum dolor sit amet.",
+                                    "objetivos": "Lorem ipsum dolor sit amet.",
+                                    "justificativa": "Lorem ipsum dolor sit amet.",
+                                    "etapa": "Lorem ipsum dolor sit amet.",
+                                    "ficha_tecnica": "Lorem ipsum dolor sit amet.",
+                                    "impacto_ambiental": "Lorem ipsum dolor sit amet.",
+                                    "especificacao_tecnica": "Lorem ipsum dolor sit amet.",
+                                    "providencia": "Lorem ipsum dolor sit amet.",
+                                    "democratizacao": "Lorem ipsum dolor sit amet.",
+                                    "sinopse": "Lorem ipsum dolor sit amet.",
+                                    "resumo": "Lorem ipsum dolor sit amet.",
+                                    "created_at": "2023-02-23T12:33:45.000000Z",
+                                    "updated_at": "2023-02-25T12:33:45.000000Z",
+                                    "valor_projeto": "78000.36",
+                                    "outras_fontes": "0",
+                                    "valor_proposta": "454587",
+                                    "valor_solicitado": "454587",
+                                    "objetivo": "Lorem ipsum dolor sit amet.",
+                                    "estrategia_execucao": "Lorem ipsum dolor sit amet.",
+                                    "link_incentivadores": "http://link_example_edit.com"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "id_projeto": {
+                                            "type": "number",
+                                            "example": 1
+                                        },
+                                        "pronac": {
+                                            "type": "string",
+                                            "example": "12345"
+                                        },
+                                        "ano_projeto": {
+                                            "type": "string",
+                                            "example": "2023"
+                                        },
+                                        "nome": {
+                                            "type": "string",
+                                            "example": "Nome do Projeto Editado"
+                                        },
+                                        "segmento": {
+                                            "type": "string",
+                                            "example": "Exposição de Artes Visuais"
+                                        },
+                                        "area": {
+                                            "type": "string",
+                                            "example": "Artes Visuais"
+                                        },
+                                        "uf": {
+                                            "type": "string",
+                                            "example": "SC"
+                                        },
+                                        "municipio": {
+                                            "type": "string",
+                                            "example": "Blumenau"
+                                        },
+                                        "data_inicio": {
+                                            "type": "string",
+                                            "example": "2023-02-23 00:00:00"
+                                        },
+                                        "data_termino": {
+                                            "type": "string",
+                                            "example": "2023-02-28 00:00:00"
+                                        },
+                                        "situacao": {
+                                            "type": "string",
+                                            "example": "Autorizada a captação"
+                                        },
+                                        "mecanismo": {
+                                            "type": "string",
+                                            "example": "Mecenato"
+                                        },
+                                        "enquadramento": {
+                                            "type": "string",
+                                            "example": "Artigo XXX"
+                                        },
+                                        "valor_captado": {
+                                            "type": "string",
+                                            "example": "65000"
+                                        },
+                                        "valor_aprovado": {
+                                            "type": "string",
+                                            "example": "20000"
+                                        },
+                                        "acessibilidade": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "objetivos": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "justificativa": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "etapa": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "ficha_tecnica": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "impacto_ambiental": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "especificacao_tecnica": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "providencia": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "democratizacao": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "sinopse": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "resumo": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "created_at": {
+                                            "type": "string",
+                                            "example": "2023-02-23T12:33:45.000000Z"
+                                        },
+                                        "updated_at": {
+                                            "type": "string",
+                                            "example": "2023-02-25T12:33:45.000000Z"
+                                        },
+                                        "valor_projeto": {
+                                            "type": "string",
+                                            "example": "78000.36"
+                                        },
+                                        "outras_fontes": {
+                                            "type": "string",
+                                            "example": "0"
+                                        },
+                                        "valor_proposta": {
+                                            "type": "string",
+                                            "example": "454587"
+                                        },
+                                        "valor_solicitado": {
+                                            "type": "string",
+                                            "example": "454587"
+                                        },
+                                        "objetivo": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "estrategia_execucao": {
+                                            "type": "string",
+                                            "example": "Lorem ipsum dolor sit amet."
+                                        },
+                                        "link_incentivadores": {
+                                            "type": "string",
+                                            "example": "http://link_example_edit.com"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "UNPROCESSABLE CONTENT",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "message": {
+                                            "type": "string",
+                                            "example": "The pronac field is required."
+                                        },
+                                        "errors": {
+                                            "type": "string",
+                                            "example": "Object of errors"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

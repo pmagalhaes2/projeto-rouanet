@@ -22,9 +22,6 @@
             <span>R$ {{ $d->valor_captado }}</span>
         </div>
         <div class="wrap-text">
-        <button>
-            <a href="/projects/edit/{{ $d -> id_projeto }}">Editar</a>
-        </button>
         <form action="/projects/{{ $d-> id_projeto}}" method="POST">
             @csrf
             @method('DELETE')
